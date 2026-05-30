@@ -4,3 +4,13 @@ python-multipart
 sqlalchemy
 psycopg2-binary
 PyPDF2
+
+# AUTHENTICATION
+python-jose[cryptography]
+passlib[bcrypt]
+
+# EMAIL
+secure-smtplib
+
+# ENV VARIABLES
+python-dotenv

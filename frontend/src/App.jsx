@@ -1,10 +1,13 @@
 import './App.css'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 function App() {
 
   const [jobs, setJobs] = useState([])
+
+  const navigate = useNavigate()
 
   useEffect(() => {
 
@@ -51,13 +54,17 @@ function App() {
         </div>
 
         <div className="card">
+
           <h2>Recruiter Portal</h2>
 
           <p>
             Manage job postings and review candidates with AI scoring.
           </p>
 
-          <button>Recruiter Login</button>
+          <button onClick={() => navigate('/recruiter')}>
+            Recruiter Login
+          </button>
+
         </div>
 
       </div>

@@ -58,3 +58,24 @@ button {
 button:hover {
   background-color: #1d4ed8;
 }
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li {
+  margin: 6px 0;
+}
+
+table {
+  color: white;
+}
+
+th {
+  background-color: #2d3f63;
+  color: white;
+}
+
+td {
+  text-align: center;
+}
